@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* body settings */
+body {
+    color: #374d50;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*header settings */
+header {
+    display: flex;
+    padding: 20px 35px;
+    background-color: #374d50;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: large;   
+}
+header h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+header nav {
+    margin: 7px 0;
+  }
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    color: #fff;
+  }
+Header a {
+      text-decoration: none;
+  }
+
+.Hero {
+    background-image: url('../images/photo-1616998193501-308daa7d6150.jfif');
+    background-size:cover;
+    display: flex;
+}
+
+.Tong-Hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin : 0px auto;
+}
+
+.Tong-quote {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin : 0px auto;
+    color: #fff;
+}
+/*about me*/
+.Main-points {
+    display: flex;
+    background-color: #374d50;
+    color: #fff;
+}
+
+.About-me-l {
+    margin: 25px 25px 25px 25px;
+    border-right-style: solid;
+    padding: 10px 80px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.About-me-T {
+    margin: 25px 25px 25px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/*my work*/
+.My-Work-l {
+    margin: 25px 25px 25px 25px;
+    border-right-style: solid;
+    padding: 10px 80px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.My-work-T {
+    margin: 25px 25px 25px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.My-Work-b {
+    margin: 25px 25px 25px 25px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.My-Work-b h3 {
+    text-align: center;
+}
+
+
