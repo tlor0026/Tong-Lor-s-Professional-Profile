@@ -3,6 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media screen and (max-width: 980px) {
+    header h1 a {
+      /* this will be applied on any screen smaller than 980px */
+      color: tomato;
+    }
+    .title {
+        width: 80%;
+      }
+      
+      .trainer {
+        flex: 0 70%;
+      }
+      
+      .contact-info iframe{
+        flex: 1 100%;
+      }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      /* this will be applied on any screen between 768px and 575px */
+      font-size: 80px;
+      color: tomato;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header h1 {
+      /* this will be applied on any screen smaller than 575px */
+      font-size: 15px;
+    }
+  }
   /* body settings */
 body {
     color: #374d50;
@@ -21,7 +55,7 @@ header {
 header h1 {
     color: #fff;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 1.55vw;
     margin: 0;
 }
 header nav {
@@ -38,17 +72,24 @@ header nav ul {
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 48px;
     color: #fff;
+  }
+  header nav ul li a:hover {
+    background: #374d50;
+    color: black;
+    text-shadow: none;
   }
 Header a {
       text-decoration: none;
   }
 
+/*Hero Section*/
 .Hero {
     background-image: url('../images/photo-1616998193501-308daa7d6150.jfif');
     background-size:cover;
     display: flex;
+    flex: 1 12%;
 }
 
 .Tong-Hero {
@@ -56,6 +97,7 @@ Header a {
     flex-wrap: wrap;
     align-items: center;
     margin : 0px auto;
+    box-shadow: 5px 10px 15px black;
 }
 
 .Tong-quote {
@@ -64,8 +106,10 @@ Header a {
     align-items: center;
     margin : 0px auto;
     color: #fff;
+    text-shadow: 5px 10px 15px black;
+    font-family: 'Times New Roman', Times, serif;
 }
-/*about me*/
+/*about me settings*/
 .Main-points {
     display: flex;
     background-color: #374d50;
@@ -80,15 +124,19 @@ Header a {
     flex-wrap: wrap;
     text-align: center;
 }
+
 .About-me-T {
     margin: 25px 25px 25px 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+    margin: 25px 25px 25px 25px;
+    border-right-style: solid;
+    padding: 10px 80px 10px 10px;
 }
 
-/*my work*/
+/*my work settings*/
 .My-Work-l {
     margin: 25px 25px 25px 25px;
     border-right-style: solid;
@@ -104,16 +152,55 @@ Header a {
     justify-content: space-between;
     text-align: center;
 }
-.My-Work-b {
+.My-Work-p {
     margin: 25px 25px 25px 25px;
     display: flex;
     flex: 1;
     justify-content: space-between;
     text-align: center;
+    border-right-style: solid;
+    padding: 10px 80px 10px 10px;
+    z-index: 0;
 }
 
-.My-Work-b h3 {
+.My-Work-rb {
+    padding: 10px 80px 10px 10px;
+    margin: 25px 25px 25px 25px;
+    background-color: black;
+    position: relative;
+}
+
+/* button */
+
+.Run-buddy {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: contain;
+    border: none;
+    padding: 15px 32px;
     text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+#Run-buddy {
+    z-index: 1;
+    position: relative;
+}
+
+#My-Work-rb {
+    z-index: 2;
+    position: relative;
+}
+.Run-buddy:hover{
+    opacity: 0.7;
+}
+.Run-buddy a {
+    text-decoration: none;
+    color: white;
+    
 }
 
 
