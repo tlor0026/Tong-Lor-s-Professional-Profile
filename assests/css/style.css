@@ -1,144 +1,148 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+ box-sizing: border-box;
 }
 @media screen and (max-width: 980px) {
-    header h1 a {
-      /* this will be applied on any screen smaller than 980px */
-      color: tomato;
-    }
-    .title {
-        width: 80%;
-      }
-      
-      .trainer {
-        flex: 0 70%;
-      }
-      
-      .contact-info iframe{
-        flex: 1 100%;
-      }
+  header h1 a {
+    /* this will be applied on any screen smaller than 980px */
+    color: tomato;
   }
+  .title {
+    width: 80%;
+  }
+  .trainer {
+    flex: 0 70%;
+  }
+  .contact-info iframe{
+    flex: 1 100%;
+  }
+}
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-    header h1 {
-      /* this will be applied on any screen between 768px and 575px */
-      font-size: 80px;
-      color: tomato;
-    }
+@media screen and (max-width: 768px) {
+  header h1 {
+  /* this will be applied on any screen between 768px and 575px */
+    font-size: 80px;
+    color: tomato;
   }
+}
   
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-    header h1 {
-      /* this will be applied on any screen smaller than 575px */
-      font-size: 15px;
-    }
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+  /* this will be applied on any screen smaller than 575px */
+  font-size: 15px;
   }
+}
   /* body settings */
 body {
-    color: #374d50;
-    font-family: Helvetica, Arial, sans-serif;
+  color: #374d50;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /*header settings */
 header {
-    display: flex;
-    padding: 20px 35px;
-    background-color: #374d50;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: large;   
+  display: flex;
+  padding: 20px 35px;
+  background-color: #374d50;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 header h1 {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.55vw;
-    margin: 0;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
 }
 header nav {
-    margin: 7px 0;
-  }
+  margin: 7px 0;
+}
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
 
 header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 48px;
-    color: #fff;
-  }
+  margin: 0 30px;
+  font-weight: lighter;
+  color: #fff;
+}
   header nav ul li a:hover {
-    background: #374d50;
-    color: black;
-    text-shadow: none;
-  }
+  background: #374d50;
+  color: black;
+  text-shadow: none;
+}
 Header a {
-      text-decoration: none;
+  text-decoration: none;
   }
 
 /*Hero Section*/
 .Hero {
-    background-image: url('../images/photo-1616998193501-308daa7d6150.jfif');
-    background-size:cover;
-    display: flex;
-    flex: 1 12%;
+  background-image: url('../images/photo-1616998193501-308daa7d6150.jfif');
+  background-size:cover;
+  display: flex;
 }
 
 .Tong-Hero {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin : 0px auto;
-    box-shadow: 5px 10px 15px black;
-    max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin : 0px auto;
+  box-shadow: 5px 10px 15px black;
+}
+
+.Tong-Hero img {
+  width: 244px;
+  height: 515px;
+  display: flex;
+  flex-shrink: 5;
 }
 
 .Tong-quote {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin : 0px auto;
-    color: #fff;
-    text-shadow: 5px 10px 15px black;
-    font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin : 0px auto;
+  color: #fff;
+  text-shadow: 5px 10px 15px black;
+  font-family: 'Times New Roman', Times, serif;
 }
 /*about me settings*/
 .Main-points {
-    display: flex;
-    background-color: #374d50;
-    color: #fff;
-    padding: 15px;
+  display: flex;
+  background-color: #374d50;
+  color: #fff;
+  padding: 15px;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .About-me-l {
-    border-right-style: solid;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+  border-right-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .About-me-T {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: center;
-    border-right-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  border-right-style: solid;
 }
 
 /*my work settings*/
 .My-Work-l {
-    border-right-style: solid;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+  border-right-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .My-work-T {
   display: flex;
@@ -148,7 +152,6 @@ Header a {
 }
 .My-Work-p {
   display: flex;
-  flex: 1;
   justify-content: space-between;
   text-align: center;
   border-right-style: solid;
@@ -163,19 +166,21 @@ Header a {
 /* button - Run-buddy */
 
 .Run-buddy {
-    background-image: url('../images/hero-bg.jpg');
-    background-size: cover;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    width: 25%;
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  width: 25%;
 }
 .Run-buddy:hover{
-    opacity: 0.7;
+  opacity: 0.7;
+  max-width: 200%;
+    
 }
 .Run-buddy a {
-    text-decoration: none;
-    color: white;  
+  text-decoration: none;
+  color: white;  
 }
 
 /*contact info*/
@@ -191,5 +196,6 @@ Header a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  text-align: center;
+  text-align: left;
+  display: inline-block;
 }
