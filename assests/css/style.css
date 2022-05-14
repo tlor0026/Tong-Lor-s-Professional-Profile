@@ -1,40 +1,24 @@
 * {
   margin: 0px;
   padding: 0px;
- box-sizing: border-box;
+  box-sizing: border-box;
 }
+  /* For screens between 980px(highest) and 769px(lowest) */
 @media screen and (max-width: 980px) {
-  header h1 a {
-    /* this will be applied on any screen smaller than 980px */
-    color: tomato;
-  }
-  .title {
-    width: 80%;
-  }
-  .trainer {
-    flex: 0 70%;
-  }
-  .contact-info iframe{
-    flex: 1 100%;
-  }
+
 }
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  /* for tablets and sizes between 768px(highest) 576px(lowest)*/
 @media screen and (max-width: 768px) {
-  header h1 {
-  /* this will be applied on any screen between 768px and 575px */
-    font-size: 80px;
-    color: tomato;
-  }
 }
-  
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+/* For mobile phones and smaller between 575px(highest) and lower*/
 @media screen and (max-width: 575px) {
   header h1 {
-  /* this will be applied on any screen smaller than 575px */
-  font-size: 15px;
+    width: 100%;
+    text-align: center;
   }
-}
+  header ul{
+    flex-wrap: nowrap;
+  }
   /* body settings */
 body {
   color: #374d50;
@@ -48,12 +32,10 @@ header {
   background-color: #374d50;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: large;
 }
 header h1 {
   color: #fff;
-  font-weight: bold;
   margin: 0;
 }
 header nav {
@@ -66,13 +48,12 @@ header nav ul {
   align-items: center;
   list-style: none;
 }
-
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   color: #fff;
 }
-  header nav ul li a:hover {
+header nav ul li a:hover {
   background: #374d50;
   color: black;
   text-shadow: none;
@@ -80,122 +61,116 @@ header nav ul li a {
 Header a {
   text-decoration: none;
   }
-
 /*Hero Section*/
 .Hero {
   background-image: url('../images/photo-1616998193501-308daa7d6150.jfif');
   background-size:cover;
   display: flex;
+  justify-content: space-between;
 }
-
-.Tong-Hero {
+.Tong {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   margin : 0px auto;
+}
+.Tong img {
   box-shadow: 5px 10px 15px black;
-}
-
-.Tong-Hero img {
-  width: 244px;
-  height: 515px;
-  display: flex;
-  flex-shrink: 5;
-}
-
-.Tong-quote {
+  width: 25%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  margin : 0px auto;
-  color: #fff;
-  text-shadow: 5px 10px 15px black;
-  font-family: 'Times New Roman', Times, serif;
 }
-/*about me settings*/
-.Main-points {
+.quote {
+  display: flex;
+  flex-wrap: wrap;
+  margin : 0px auto;
+  align-items: center;
+}
+.quote h2 {
+  color: #fff;
+  width: 100%;
+  height: auto;
+}
+/*Overall Section Settings*/
+.About-Me {
   display: flex;
   background-color: #374d50;
+  border-style: solid;
+  border-color: black;
+}
+/*About Me Settings*/
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  border-right-style: solid;
+  border-color: black;
   color: #fff;
-  padding: 15px;
-  font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.About-me-l {
-  border-right-style: solid;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.About-me-T {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  text-align: center;
-  border-right-style: solid;
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  height: auto;
 }
-
-/*my work settings*/
-.My-Work-l {
-  border-right-style: solid;
+/*My Work Settings*/
+.My-Work{
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  background-color: #374d50;
+  border-style: solid;
+  border-color: black;
 }
-.My-work-T {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
-}
-.My-Work-p {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  border-right-style: solid;
-  width: 75%;
-}
-
-.My-Work-rb {
-    background-color: black;
-    position: relative;
-}
-
-/* button - Run-buddy */
-
+/* Run Buddy Div */
 .Run-buddy {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
-  cursor: pointer;
   position: relative;
+  cursor: pointer;
   text-align: center;
-  width: 25%;
+  width: 100%;
+  height: auto;
 }
 .Run-buddy:hover{
-  opacity: 0.7;
-  max-width: 200%;
-    
+  opacity: 0.7;    
 }
 .Run-buddy a {
   text-decoration: none;
-  color: white;  
+  color: #fff;  
 }
-
 /*contact info*/
-
+.Contact {
+  display: flex;
+  background-color: #374d50;
+  border-style: solid;
+  border-color: black;
+}
 .ci {
-  border-right-style: solid;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  border-style: solid;
+  border-color: black;
+  color: #fff;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+  height: auto;
 }
-
 .addy {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left;
   display: inline-block;
+  width: 100%;
+  height: auto;
+  border-style: solid;
+  border-color: black;
+  margin: 5px;
+  padding: 5px;
+}
+.addy h3 {
+  color: #fff;
+}
+.addy address{
+  color: #fff;
 }
