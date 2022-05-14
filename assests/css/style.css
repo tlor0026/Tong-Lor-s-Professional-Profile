@@ -11,20 +11,41 @@
 @media screen and (max-width: 768px) {
 }
 /* For mobile phones and smaller between 575px(highest) and lower*/
-@media screen and (max-width: 575px) {
-  header h1 {
+@media screen and (max-width: 575px){
+  .con {
+    flex-direction: column;
+  }
+header {
     width: 100%;
     text-align: center;
   }
   header ul{
-    flex-wrap: nowrap;
+    flex-direction: column;
   }
+
+  .About-Me{
+    flex-direction: column;
+  }
+}
+
+
+
+
+
   /* body settings */
 body {
   color: #374d50;
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/*Utility settings */
+.con {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
 /*header settings */
 header {
   display: flex;
@@ -40,6 +61,7 @@ header h1 {
 }
 header nav {
   margin: 7px 0;
+  padding: 7px 0;
 }
 header nav ul {
   display: flex;
@@ -60,23 +82,22 @@ header nav ul li a:hover {
 }
 Header a {
   text-decoration: none;
-  }
+}
 /*Hero Section*/
 .Hero {
   background-image: url('../images/photo-1616998193501-308daa7d6150.jfif');
   background-size:cover;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .Tong {
   display: flex;
-  flex-wrap: wrap;
-  margin : 0px auto;
 }
 .Tong img {
   box-shadow: 5px 10px 15px black;
-  width: 25%;
   height: auto;
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -92,6 +113,24 @@ Header a {
   height: auto;
 }
 /*Overall Section Settings*/
+.wrkttl{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: auto;
+  color: #fff;
+  text-align: left;
+  border-right-style: solid;
+  width: 20%;
+  height: auto;
+}
+.firstsp {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
 .About-Me {
   display: flex;
   background-color: #374d50;
@@ -118,6 +157,19 @@ Header a {
   border-style: solid;
   border-color: black;
 }
+.ecb{
+  display: flex;
+  flex-wrap: wrap;
+  border-right-style: solid;
+  border-color: black;
+  color: #fff;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  width: 98%;
+  height: auto;
+}
+
 /* Run Buddy Div */
 .Run-buddy {
   background-image: url('../images/hero-bg.jpg');
@@ -125,8 +177,9 @@ Header a {
   position: relative;
   cursor: pointer;
   text-align: center;
-  width: 100%;
+  width: 104%;
   height: auto;
+  color: #fff;
 }
 .Run-buddy:hover{
   opacity: 0.7;    
