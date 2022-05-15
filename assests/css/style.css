@@ -10,6 +10,10 @@
   /* for tablets and sizes between 768px(highest) 576px(lowest)*/
 @media screen and (max-width: 768px) {
 }
+.con {
+  font-size:medium;
+  
+}
 /* For mobile phones and smaller between 575px(highest) and lower*/
 @media screen and (max-width: 575px){
   .con {
@@ -26,10 +30,25 @@ header {
   .About-Me{
     flex-direction: column;
   }
+
+  .firstsp{
+  flex-direction: column;
+  }
+  .wrkttl {
+  border-right-style: none;
+  }
+  .About-Me{
+  justify-content: flex-start;
+  font-size: 3vw;
+  }
+  .My-Work {
+  flex-direction: column;
+  font-size: 3vw;
+  }
+  .quote {
+    font-size: 3vw;
+   }
 }
-
-
-
 
 
   /* body settings */
