@@ -1,4 +1,4 @@
-# Tong Lor'd Profile
+# Tong Lor's Profile
 Welcome to my profile. Please take time to read though all my contetns. Within my profile, you will find. A section about me going over my life and work experience. Another section about my current/past work. And lastly a way to contact me!
 
 ## Installation
