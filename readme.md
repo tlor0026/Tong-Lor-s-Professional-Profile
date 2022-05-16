@@ -6,6 +6,8 @@ No installatioin will be requried as this is my professional profile and not an 
 
 ## Usage
 Here is a link to my deployed page online! https://tlor0026.github.io/Tong-Lor-s-Professional-Profile/
+Please feel free to use my navigation bar for easier access.
+If needed my page should be responsive to smaller screens!
 
 ## Credits
 All HTML and CSS knowldge used to create my profile are listed below!
